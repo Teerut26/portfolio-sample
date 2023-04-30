@@ -44,10 +44,16 @@
 
 .divide {
     width: 50%;
-    height: 1px;
+    height: 5px;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    background-color: #18181B;
+    /* ref -> https://cssgradient.io/ */
+    background: rgb(255, 126, 0);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 126, 0, 1) 0%,
+        rgba(255, 203, 0, 1) 100%
+    );
 }
 
 .btn {
@@ -58,16 +64,44 @@
     transition: 0.3s;
     justify-content: center;
     align-items: center;
-    border: #18181B 2px solid;
+    border: #18181b 2px solid;
     background-color: white;
 
-
-    color: #18181B;
+    color: #18181b;
     text-decoration: none;
-
 }
 
 .btn:hover {
     background-color: #e0e0e0;
-    
+}
+
+.rocket-icon {
+    width: 12rem;
+    height: 12rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.rocket-icon:hover {
+    animation: shake 0.1s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-5px, -5px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(5px, -5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
