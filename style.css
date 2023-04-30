@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+}
+
+.container-center {
+    /* min-height: 100vh; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrapper-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrapper-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji-animated {
+    transition: 0.3s;
+}
+
+.emoji-animated:hover {
+    opacity: 1;
+    rotate: 30deg;
+}
+
+.divide {
+    width: 50%;
+    height: 1px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    background-color: #18181B;
+}
+
+.btn {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+    border: #18181B 2px solid;
+    background-color: white;
+
+
+    color: #18181B;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+    
+}
